@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components  {
+    @keyframes progress {
+        0% {
+          stroke-dasharray: 0 100;
+        }
+      }
+      
+      .animate-progress {
+        animation: progress 1s ease-out forwards;
+      }
+      
+}

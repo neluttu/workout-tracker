@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iCodeThis.com daily challenge</title>
+    <link rel="stylesheet" href="styles.css" class="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-[#047288] flex items-center justify-center min-h-screen">
+	<section class="w-full max-w-[500px] bg-[#068da4] shadow-[0px_10px_19px_14px_rgba(101,101,101,0.2)] text-white overflow-hidden rounded-md mx-2">
+        <h1 class="py-5 text-2xl text-center">
+            Wednesday
+            <p id="date" class="text-base font-light"></p>
+            <script>
+                function updateDateAndTime() {
+                  const currentDate = new Date();
+                  const options = { 
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric',
+                    hour: '2-digit',
+                    minute: '2-digit',
+                  };
+                  const formattedDate = currentDate.toLocaleDateString('en-US', options);
+                  document.getElementById('date').textContent = formattedDate;
+                }
+                updateDateAndTime();
+                setInterval(updateDateAndTime, 1000);
+              </script>
+        </h1>
+        <div class="px-4 py-10 bg-white shadow-[0px_10px_19px_14px_rgba(101,101,101,0.2)]">
+            <svg viewBox="0 0 36 36"
+            class="stroke-[#f83a78] block m-auto max-w-[180px] min-w-[80px] max-h-[250px] overflow-visible">
+                <path class="fill-none stroke-[#f2f2f2] stroke-[2.5px]"
+                    d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                <path class="fill-none stroke-[2.5px] animate-progress" stroke-linecap="round"
+                    stroke-dasharray="86, 100"
+                    d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                <text text-anchor="middle" x="18" y="20.35" stroke="none" class="percentage fill-[#999] text-[0.4rem] font-semibold">4,8 Km</text>
+            </svg>
+            <div class="w-2/3 mx-auto flex items-center justify-between text-[#7a7c7b] mt-4 gap-10">
+                <p class="block w-full text-center">
+                    <span class="block text-lg font-semibold text-[#f83a78]">TIME</span>
+                    <span class="text-4xl font-semibold text-[#068da4]">23:40</span>
+                </p>
+                <p class="block w-full text-center">
+                    <span class="block text-lg font-semibold text-[#f83a78]">CALORIES</span>
+                    <span class="text-4xl font-semibold text-[#068da4]">23:40</span>
+                </p>
+            </div>
+        </div>
+        <h2 class="my-8 text-xl font-semibold text-center">Latest activities</h2>
+        <ul class="flex items-center justify-start w-[86%] mx-auto py-4 text-lg font-semibold border-b border-b-[#047288]">
+            <li class="pr-5">
+                <svg xmlns="http://www.w3.org/2000/svg"  width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M13 4m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                    <path d="M4 17l5 1l.75 -1.5" />
+                    <path d="M15 21l0 -4l-4 -3l1 -6" />
+                    <path d="M7 12l0 -3l5 -1l3 3l3 1" />
+                </svg>
+            </li>
+            <li class="flex-1 grow">11 Km</li>
+            <li class="flex-1 grow">1h 20 min</li>
+            <li class="flex-1 grow">478 calories</li>
+        </ul>
+        <ul class="flex items-center justify-start w-[86%] mx-auto py-4 text-lg font-semibold border-b border-b-[#047288]">
+            <li class="pr-5">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bike" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M5 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                    <path d="M19 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                    <path d="M12 19l0 -4l-3 -3l5 -4l2 3l3 0" />
+                    <path d="M17 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                </svg>
+            </li>
+            <li class="flex-1 grow">45 Km</li>
+            <li class="flex-1 grow">2h 37 min</li>
+            <li class="flex-1 grow">865 calories</li>
+        </ul>
+        <ul class="flex items-center justify-start w-[86%] mx-auto py-4 text-lg font-semibold">
+            <li class="pr-5">
+                <svg xmlns="http://www.w3.org/2000/svg"  width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M13 4m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                    <path d="M4 17l5 1l.75 -1.5" />
+                    <path d="M15 21l0 -4l-4 -3l1 -6" />
+                    <path d="M7 12l0 -3l5 -1l3 3l3 1" />
+                </svg>
+            </li>
+            <li class="flex-1 grow">8 Km</li>
+            <li class="flex-1 grow">55 min</li>
+            <li class="flex-1 grow">322 calories</li>
+        </ul>
+        <div class="flex items-center justify-center w-full p-5 bg-white">
+            <svg xmlns="http://www.w3.org/2000/svg" class="grow-0" width="36" height="36" viewBox="0 0 24 24" stroke-width="2.5" stroke="#2090a5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M5 12l-2 0l9 -9l9 9l-2 0" fill="#2090a5" />
+                <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7"  fill="#2090a5" />
+                <path d="M10 12h4v4h-4z"  fill="white" />
+            </svg>
+            <div class="text-center grow">
+                <button class="font-bold rounded-full bg-gradient-to-r from-[#fc3c79] to-[#bf346e] px-10 text-2xl py-2 shadow-[0px_10px_19px_14px_rgba(252,61,119,0.2)]">
+                    GO
+                </button>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="36" height="36" viewBox="0 0 24 24" stroke-width="2.5" stroke="#2090a5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M4 6l16 0" />
+                <path d="M4 12l16 0" />
+                <path d="M4 18l16 0" />
+            </svg>
+        </div>
+    </section>
+</body>
+</html>
